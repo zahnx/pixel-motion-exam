@@ -1,0 +1,285 @@
+/* Font-used Source Sans 3
+font-family: 'Source Sans 3', sans-serif;
+*/
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@300;400;500&display=swap");
+
+body {
+  font-family: "Source Sans 3", sans-serif;
+}
+
+body a {
+  text-decoration: none;
+  color: black;
+}
+
+body p {
+  padding: 0;
+  margin: 0;
+}
+
+/* 📌📌📌📌 HEADER 📌📌📌📌*/
+header a,
+header p {
+  text-decoration: none;
+  font-weight: bold;
+  color: black;
+}
+
+header a {
+  font-size: 18px;
+}
+
+.honda-logo {
+  height: 30px;
+}
+
+.social-links img {
+  width: 20px;
+}
+
+.header-btn {
+  border-style: none;
+  padding: 3px 30px;
+  font-size: 12px;
+  color: white;
+  background: linear-gradient(
+    to bottom,
+    rgba(255, 255, 255) -8%,
+    rgb(160, 146, 146),
+    rgb(214, 25, 25) 60%
+  );
+
+  border: 1px solid #986d6d;
+}
+
+/* 📌📌📌📌 NAVBAR 📌📌📌📌*/
+
+nav {
+  font-size: 12px;
+}
+
+/* 📌📌📌📌 BANNER 📌📌📌📌*/
+
+.custom-btn {
+  background-color: rgb(1, 124, 194);
+  color: white;
+  font-weight: bold;
+  padding: 10px 20px;
+  border-radius: 3px;
+  border: none;
+  transition: background-color ease 0.2s;
+}
+
+.custom-btn:hover {
+  background-color: rgb(14, 87, 129);
+}
+
+.hero-container h1 {
+  font-size: 50px;
+}
+.hero-container {
+  min-height: 330px;
+  background: url(../assets/hero-banner-bg.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 80%;
+}
+
+.hero-right-img {
+  width: 550px;
+  margin-left: -14%;
+}
+
+.hero-container p {
+  margin: 12px 0;
+}
+/* 📌📌📌📌 MAIN SECTION  📌📌📌📌*/
+.main-container {
+  background-color: rgb(238, 238, 238);
+}
+.main-container .custom-btn {
+  width: 100%;
+  padding: 20px 80px;
+  font-size: 18px;
+  margin: 10px 0;
+}
+
+/* 📌📌📌📌 ADD CTA   📌📌📌📌*/
+.add-cta {
+  border-radius: 3px;
+}
+
+.add-cta-left a {
+  color: gray;
+  font-size: 15px;
+  font-weight: 400;
+}
+
+.add-cta-left h5 {
+  font-weight: bold;
+}
+
+.current-offer-img {
+  width: 240px;
+}
+
+#current-offer-details h5 {
+  padding-top: 20px;
+  font-size: 14px;
+}
+#current-offer-details p {
+  font-size: 14px;
+}
+#current-offer-details a {
+  color: gray;
+  font-size: 14px;
+}
+
+/* 📌📌📌📌 PROMOTION  📌📌📌📌*/
+
+.promotion-section {
+  min-height: 600px;
+  padding: 40px 0;
+}
+
+.promotion-img {
+  height: 400px;
+  max-width: 800px;
+  margin-bottom: 20px;
+}
+
+/* 📌📌📌📌 FOOTER  📌📌📌📌*/
+.footer-container {
+  font-size: 12px;
+}
+
+.footer-container img {
+  max-height: 28px;
+}
+
+.footer-links-cont {
+  background-color: rgb(1, 124, 194);
+}
+
+.footer-links-cont a {
+  color: white;
+}
+
+.footer-links-cont span {
+  margin: 0 10px;
+  color: white;
+}
+
+/* 📌📌📌📌 MEDIA QUERIES  📌📌📌📌*/
+
+/* Adjust the height for tablets*/
+@media (max-width: 768px) {
+  .honda-logo {
+    height: 40px;
+  }
+  .hero-container {
+    min-height: 400px;
+    background: url(../assets/hero-banner-bg.png);
+    background-size: 260%;
+    background-repeat: no-repeat;
+    background-position: 19.5% 100%;
+  }
+
+  .custom-btn {
+    padding: 10px 40px;
+    font-size: 18px;
+  }
+
+  .main-container {
+    padding-top: 10px;
+  }
+  .main-container .custom-btn {
+    margin: 7px 0;
+  }
+  .current-offer-img {
+    padding-top: 35px;
+  }
+
+  .promotion-section {
+    height: 100%;
+  }
+
+  .promotion-img {
+    height: 450px;
+    max-width: 650px;
+    margin-bottom: 30px;
+  }
+
+  .footer-links-cont {
+    text-align: center;
+  }
+  .footer-links-cont a {
+    font-size: 19px;
+  }
+
+  .footer-links-cont span {
+    margin: 0 7px;
+    color: white;
+  }
+}
+
+/* Adjust the height for mobile devices*/
+@media (max-width: 576px) {
+  .honda-logo {
+    height: 40px;
+  }
+  .hero-container {
+    min-height: 360px;
+    background: url(../assets/hero-banner-bg.png);
+    background-size: 360%;
+    background-repeat: no-repeat;
+    background-position: 23% 100%;
+  }
+
+  .custom-btn {
+    padding: 10px 20px;
+    margin-top: 10px;
+    font-size: 18px;
+  }
+
+  .hero-container h1 {
+    margin-top: -20px;
+    font-size: 32px;
+  }
+  .hero-container p {
+    font-size: 14px;
+    margin: 0 60px;
+  }
+
+  .promotion-img {
+    height: 300px;
+    max-width: 350px;
+    margin-bottom: 25px;
+  }
+
+  .footer-container img {
+    margin-top: 14px;
+  }
+
+  .footer-links-cont {
+    text-align: center;
+    padding: 0 12px;
+  }
+  .footer-links-cont a {
+    font-size: 16px;
+  }
+
+  .footer-links-cont span {
+    margin: 0 5px;
+    color: white;
+  }
+
+  .footer-container img {
+    max-height: 40px;
+  }
+  .footer-text {
+    padding: 0 60px;
+    font-size: 16px;
+    text-align: center;
+  }
+}
